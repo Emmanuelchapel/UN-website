@@ -1,0 +1,678 @@
+@font-face {
+  font-family: inter;
+  src: url("/public/font/Inter-VariableFont_slnt,wght.ttf") format("truetype");
+}
+
+/* font for the body text */
+
+@font-face {
+  font-family: montserrat;
+  src: url("/public/font/Montserrat-Regular.ttf") format("truetype");
+}
+a {
+  font-family: monserrat;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: inter;
+}
+
+p {
+  font-family: monserrat;
+}
+
+section {
+  padding: 10px;
+}
+.Overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 800%;
+  background-color: rgba(0, 0, 0, 0.61);
+  filter: blur(30px);
+  z-index: 9999;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 30px;
+  gap: 20px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 20px;
+  line-height: 30px;
+}
+.section-name {
+  font-size: 20px;
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: var(---primary-bg);
+}
+
+:root {
+  ---primary-bg: #00214e;
+  ---trashly-bg: #ffffff;
+  ---secondary-bg: #eba949;
+  ---text-primary-color: #00214e;
+  ---text-secondary-color: #f5f5f5;
+  ---Accent: #add8;
+  ---section-heading-color: #00214e;
+}
+
+/* navigation styling */
+
+nav .nav--link ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  transform: translateY(50px);
+}
+nav .nav--link ul a {
+  text-decoration: none;
+  font-size: 20px;
+  color: var(---primary-bg);
+}
+
+nav .nav--link ul a:hover {
+  color: var(---secondary-bg);
+}
+
+
+.nav--link {
+  position: fixed;
+  width: 500px;
+  top: 0;
+  height: 100%;
+  background-color: white;
+  padding: 50px;
+  transform: translateX(400px);
+  transition: 1s;
+  z-index: 9999;
+}
+
+.Impact-section {
+  background-image:
+    linear-gradient(#00214e, rgba(0, 0, 0, 0.701)),
+    url("/public/images/images/pexels-helenalopes-697243.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 100vw;
+  height: 60vh;
+}
+.open-navbar {
+  transform: translateX(100px);
+}
+/* End of navigation stying */
+
+/* header styling */
+header {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.701), rgba(0, 0, 0, 0.701)),
+    url("/public/images/images/pexels-helenalopes-697243.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 100vw;
+  height: 100vh;
+}
+
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+ 
+  padding: 0 50px;
+ transform: translateY(30px);
+}
+.nav-icons .open--bar {
+  transform: translateX(200px);
+}
+
+.logo {
+  width: 40px;
+}
+.logo img {
+  max-width: 100%;
+}
+
+span {
+  color: var(---secondary-bg);
+}
+
+.header-line {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  transform: translateY(60px);
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.header-line .heading h1 {
+  font-size: 30px;
+  color: white;
+}
+
+.header-line .heading {
+  min-width: 200px;
+}
+.header-line .subheading p {
+  color: rgba(255, 255, 255, 0.537);
+}
+
+.join--us-btn button {
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 30px;
+  border: 2px solid var(---secondary-bg);
+  color: var(---secondary-bg);
+  cursor: pointer;
+  transform: translateY(30px);
+  transition: 1s ease-in;
+}
+
+.join--us-btn button:hover {
+  box-shadow: 0 0 23px;
+}
+/* End of the headin styling */
+
+/* styling for the About section */
+
+.About-section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
+}
+
+.About-image img {
+  border-radius: 20px;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+.container .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+/* End of the About section styling */
+
+/* vision styling */
+
+.vision-section .container .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vision-section .container .wrapper .content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.vision-section {
+  background-color: var(---text-secondary-color);
+}
+
+.vision-section .container .wrapper .content .subheading .subheading-name h2 {
+  text-align: center;
+  color: var(---primary-bg);
+}
+
+.core-value-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 10px;
+}
+
+.card {
+  max-width: 100%;
+  height: 300px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.card-details .card-title {
+  color: var(---primary-bg);
+}
+/* End of the vision section */
+
+/* the impact section styling */
+.Impact-section {
+  background-color: var(---primary-bg);
+}
+.Impact-section .container .wrapper .section-name .icon,
+.About-icon,
+.vision-icon,
+.Program-icon,
+.Event-icon,
+.Testimonial-icon {
+  display: flex;
+  background-color: white;
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.Impact-section .container .wrapper .section-name h2 {
+  color: white;
+}
+
+.impart-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.impart-details .card-title h3 {
+  color: var(---secondary-bg);
+  font-size: 50px;
+}
+.impart-details .card-description p {
+  color: white;
+}
+
+.bg-color {
+  background-color: var(---text-secondary-color);
+}
+.bg-color-white {
+  background-color: white;
+}
+/* eND OF THE Impact section styling */
+
+/* the programs section styling */
+
+.program-card .wrapper {
+  padding: 30px;
+  transform: translateY(50px);
+}
+.Programs-section .container .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* End of the program section */
+
+/* styling the Event section */
+.Event-section {
+  background-color: var(---text-secondary-color);
+}
+.Event-section .container .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Event-card {
+  min-width: 100px;
+  height: 400px;
+  background-color: white;
+  border-radius: 10px;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.event-datails .wrapper .event-bg {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.701), rgba(0, 0, 0, 0.701)),
+    url("/public/images/images/background-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-width: 100%;
+  height: 200px;
+  border-radius: 10px 10px 50px;
+}
+
+.event-datails .wrapper .event-wrapper {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.event-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.event-datails .wrapper .event-wrapper .event-infor {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.event-datails .wrapper .event-wrapper .event-infor .event-time,
+.event-location {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.Register-btn button {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: var(---secondary-bg);
+  color: var(---primary-bg);
+  font-weight: 700;
+  cursor: pointer;
+  transition: 1s;
+}
+.Register-btn button:hover {
+  box-shadow: 0 0 23px var(---secondary-bg);
+}
+
+.calander-icon {
+  padding: 20px;
+}
+
+/* End of the event section */
+
+/* Testimonial styling */
+.testimonial-card {
+  min-width: 280px;
+  max-width: 300px;
+  height: auto;
+  border: 2px solid #dddddd;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  transform: translateX(-150px);
+  padding: 16px;
+}
+
+.testimonial-details .wrapper .testifyer-pic {
+  padding: 10px;
+  flex-shrink: 0;
+}
+.testimonial-details .testimoney-content p {
+  font-size: 18px;
+}
+.testimonial-details .wrapper .testifyer-name p {
+  color: black;
+  font-size: 12px;
+}
+
+.testimonial-details .wrapper .testifyer-name {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.testimonial-details .wrapper .testifyer-name h2 {
+  font-size: 13px;
+}
+
+.testimonial-details .testimoney-content {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  word-spacing: 2px;
+  font-size: 13px;
+  width: 105%;
+}
+
+.testimonial-details .wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+/* reting style */
+.Rating-star {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  align-items: center;
+  transform: translateY(-15px);
+}
+
+.Rating-star p {
+  font-weight: 700;
+}
+.quote-icon {
+  padding: 25px;
+  background-color: var(---primary-bg);
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-30px);
+}
+
+.testimonial-details .wrapper .testifyer-name {
+  flex: 1;
+  font-weight: 600;
+  color: var(---primary-bg);
+}
+.testimonial-section,
+.container,
+.wrapper,
+.section-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testifyer-pic img {
+  border-radius: 100%;
+  border: 1px solid #dddddd;
+}
+
+/* footer style */
+.footer-link ul {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.footer-link ul li {
+  list-style: none;
+}
+
+.footer-link ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition: 1s;
+}
+
+footer .container .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  color: white;
+}
+
+.social-icons {
+  display: flex;
+  padding: 16px;
+}
+footer {
+  background-color: var(---primary-bg);
+}
+
+.Newsletter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 16px;
+  color: white;
+}
+
+form {
+  display: flex;
+}
+form .input-field {
+  display: flex;
+  justify-items: center;
+  min-width: 100px;
+  padding: 10px;
+  background-color: white;
+}
+
+form .input-field input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+form button {
+  width: 100px;
+  cursor: pointer;
+  background-color: var(---secondary-bg);
+  color: var(---primary-bg);
+  font-weight: 700;
+  height: 50px;
+  border: none;
+  outline: none;
+}
+
+.footer-infor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  background-color: var(---secondary-bg);
+}
+
+.float-btn {
+  position: fixed;
+
+  transform: translateX(250px) translateY(500px);
+  padding: 20px;
+  z-index: 9999;
+}
+
+.float-btn button {
+  border-radius: 100px;
+  background-color: var(---primary-bg);
+  border: none;
+  outline: none;
+  padding: 16px;
+  animation: bauns 1s linear 1s infinite;
+}
+
+@keyframes bauns {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.popup {
+  width: 300px;
+  height: 50px;
+  background-color: white;
+  border: 2px solid var(---secondary-bg);
+  z-index: 9999;
+  position: fixed;
+  bottom: 140px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 300ms ease;
+}
+
+.fade-popup {
+  animation: fade 1s linear 1s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.remove-popup {
+  display: none;
+}
+
+.slideCard-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-wrapper {
+  width: 300px;
+  overflow: hidden;
+}
+
+/* moving the popup message up */
+
+.type-text{
+    width: 100%;
+    height: 800%;
+    color: white;
+}
+
+.type-text p{
+    font-size: 10px;
+   width: 47ch;
+    font-family: monospace;
+    text-wrap:nowrap;
+    overflow: hidden;
+    animation: type 5s steps(50)  infinite alternate-reverse ;
+     border: 1px solid white;
+     border-radius: 50px;
+    border-top-color: transparent;
+     border-bottom-color: transparent;
+      border-top-color: transparent;
+       border-left-color: transparent;
+       border-width: 5px;
+    
+}
+
+@keyframes type {
+ from{width: 0;}
+}
+
